@@ -1,0 +1,26 @@
+{
+    "name": "aspx-html",
+    "displayName": "aspx-html",
+    "description": "aspx高亮",
+    "version": "0.0.1",
+    "publisher": "QQZZFT",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "aspx",
+            "aliases": ["ASPX", "aspx"],
+            "extensions": [".aspx"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "aspx",
+            "scopeName": "source.aspx",
+            "path": "./syntaxes/aspx.tmLanguage.json"
+        }]
+    }
+}
