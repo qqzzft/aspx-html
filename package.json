@@ -1,7 +1,7 @@
 {
     "name": "aspx-html",
-    "displayName": "aspx-html",
-    "description": "aspx高亮",
+    "displayName": "%displayName%",
+	"description": "%description%",
     "version": "0.0.1",
     "publisher": "QQZZFT",
     "engines": {
@@ -21,6 +21,12 @@
             "language": "aspx",
             "scopeName": "source.aspx",
             "path": "./syntaxes/aspx.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+          {
+            "language": "aspx",
+            "path": "./snippets/aspx.snippets.json"
+          }
+        ]
     }
 }
