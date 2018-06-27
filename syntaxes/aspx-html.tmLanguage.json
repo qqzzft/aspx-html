@@ -8,22 +8,23 @@
 		{
 			"include": "#strings"
 		},
-		{
-			"include" : "#tags"
-		},
+		{ "include": "#tags" },
+
 		{
 			"include": "source.aspx"
 		},
 		{
-			"include" : "text.html.basic"
+			"include": "text.html.basic"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.aspx",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.aspx",
+					"match": "\\b(if|while|for|return)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.aspx",
@@ -37,16 +38,14 @@
 			]
 		},
 		"tags": {
-			"patterns": [{
-				"name": "entity.name.tag.aspx",
-				"match": "\\b(ASP|TextBox|Buttom)\\b"
-			}]
-		},"propers":{
-			"patterns": [{
-				"name":"support.type.property-name.aspx",
-				"match": "\\b(ID|Text|runat)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "entity.name.tag.aspx",
+					"match": "\\b(ASP|TextBox|Buttom)\\b"
+				}
+			]
 		}
+
 	},
 	"scopeName": "source.html.aspx"
 }
