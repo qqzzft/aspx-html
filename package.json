@@ -2,7 +2,7 @@
     "name": "aspx-html",
     "displayName": "aspx-html",
     "description": "在 ASPX 文件中提供语法高亮、括号匹配和代码片段功能。",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "QQZZFT",
     "engines": {
         "vscode": "^1.24.0"
