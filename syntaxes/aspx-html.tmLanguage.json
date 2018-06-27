@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "ASPX",
+	"name": "ASPX-HTML",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -9,7 +9,13 @@
 			"include": "#strings"
 		},
 		{
-			"include": "#keywords-aspnet"
+			"include" : "#tags"
+		},
+		{
+			"include": "source.aspx"
+		},
+		{
+			"include" : "text.html.basic"
 		}
 	],
 	"repository": {
@@ -17,12 +23,6 @@
 			"patterns": [{
 				"name": "keyword.control.aspx",
 				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"keywords-aspnet": {
-			"patterns": [{
-				"name": "keyword.control.aspx",
-				"match": "\\b(ASP|TextBox|Text|ID)\\b"
 			}]
 		},
 		"strings": {
@@ -35,7 +35,18 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"tags": {
+			"patterns": [{
+				"name": "entity.name.tag.aspx",
+				"match": "\\b(ASP|TextBox|Buttom)\\b"
+			}]
+		},"propers":{
+			"patterns": [{
+				"name":"support.type.property-name.aspx",
+				"match": "\\b(ID|Text|runat)\\b"
+			}]
 		}
 	},
-	"scopeName": "source.aspx"
+	"scopeName": "source.html.aspx"
 }

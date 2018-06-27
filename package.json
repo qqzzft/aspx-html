@@ -19,14 +19,20 @@
         }],
         "grammars": [{
             "language": "aspx",
-            "scopeName": "source.aspx",
-            "path": "./syntaxes/aspx.tmLanguage.json"
+            "scopeName": "source.html.aspx",
+            "path": "./syntaxes/aspx-html.tmLanguage.json"
         }],
         "snippets": [
           {
             "language": "aspx",
             "path": "./snippets/aspx.snippets.json"
           }
+        ],"themes": [
+            {
+                "label": "Monokai",
+                "uiTheme": "vs-dark",
+                "path": "./syntaxes/asp.html.tmTheme"
+            }
         ]
     }
 }

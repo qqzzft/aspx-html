@@ -1,1 +1,23 @@
-{}
+{
+    "aspAdRotator": {
+        "prefix": "aspAdRotator",
+        "body": [
+            "<asp:AdRotator ID=\"${1:AdRotator1}\" runat=\"server\" />"
+        ],
+        "description": ""
+    },
+    "aspBulletedList": {
+        "prefix": "aspBulletedList",
+        "body": [
+            "<asp:BulletedList ID=\"${1:BulletedList1}\" runat=\"server\"></asp:BulletedList>"
+        ],
+        "description": ""
+    },
+    "aspButton": {
+        "prefix": "aspButton",
+        "body": [
+            "<asp:Button ID=\"${1:Button1}\" runat=\"server\" Text=\"Button\" />"
+        ],
+        "description": ""
+    }
+}
