@@ -4,6 +4,7 @@
 	"include": "./dark_vs.json",
 	"tokenColors": [
 		{
+      "":"函数声明",
 			"name": "Function declarations",
 			"scope": [
 				"entity.name.function",
@@ -15,6 +16,7 @@
 			}
 		},
 		{
+      "":"类型声明和引用",
 			"name": "Types declaration and references",
 			"scope": [
 				"meta.return-type",
@@ -51,6 +53,7 @@
 			}
 		},
 		{
+      "":"类型声明和引用，TS语法特定",
 			"name": "Types declaration and references, TS grammar specific",
 			"scope": [
 				"meta.type.cast.expr",
@@ -65,6 +68,7 @@
 			}
 		},
 		{
+      "":"控制流关键词",
 			"name": "Control flow keywords",
 			"scope": "keyword.control",
 			"settings": {
@@ -72,6 +76,7 @@
 			}
 		},
 		{
+      "":"变量名和参数名",
 			"name": "Variable and parameter name",
 			"scope": [
 				"variable",
@@ -83,6 +88,7 @@
 			}
 		},
 		{
+      "":"对象的钥匙，TS语法特异性",
 			"name": "Object keys, TS grammar specific",
 			"scope": [
 				"meta.object-literal.key"
@@ -92,6 +98,7 @@
 			}
 		},
 		{
+      "":"CSS属性值",
 			"name": "CSS property value",
 			"scope": [
 				"support.constant.property-value",
@@ -107,6 +114,7 @@
 			}
 		},
 		{
+      "":"正则表达式组",
 			"name": "Regular expression groups",
 			"scope": [
 				"punctuation.definition.group.regexp",

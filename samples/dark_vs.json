@@ -244,6 +244,7 @@
 			}
 		},
 		{
+      "":"字符串插值",
 			"name": "String interpolation",
 			"scope": [
 				"punctuation.definition.template-expression.begin",
@@ -255,6 +256,7 @@
 			}
 		},
 		{
+      "":"重置JavaScript字符串插值表达式",
 			"name": "Reset JavaScript string interpolation expression",
 			"scope": [
 				"meta.template.expression"
@@ -335,6 +337,7 @@
 			}
 		},
 		{
+			"": "Java导入和包标识符的着色",
 			"name": "coloring of the Java import and package identifiers",
 			"scope": [
 				"storage.modifier.import.java",
