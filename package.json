@@ -45,8 +45,8 @@
             }
         ],
         "themes": [
-            {
-                "label": "Monokai",
+            {"id": "",
+                "label": "Monokai-test",
                 "uiTheme": "vs-dark",
                 "path": "./syntaxes/asp.html.tmTheme"
             }
