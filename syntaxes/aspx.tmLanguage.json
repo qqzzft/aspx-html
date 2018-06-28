@@ -1,41 +1,45 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "ASPX",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
-			"include": "#keywords-aspnet"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.aspx",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"keywords-aspnet": {
-			"patterns": [{
-				"name": "keyword.control.aspx",
-				"match": "\\b(ASP|TextBox|Text|ID)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.aspx",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.aspx",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.aspx"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ASPX",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords-aspnet"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.aspx",
+          "match": "\\b(if|while|for|return)\\b"
+        }
+      ]
+    },
+    "keywords-aspnet": {
+      "patterns": [
+        {
+          "name": "keyword.control.aspx",
+          "match": "\\b(ASP|TextBox|Text|ID)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.aspx",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.aspx",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.aspx"
 }

@@ -4,51 +4,52 @@
   "scopeName": "source.html.aspx",
   "patterns": [
     {
-      "include": "#keywords"
-    },
-    {
       "include": "#strings"
     },
-    { "include": "#tags" },
-    { "include": "#comment" },
+    {
+      "include": "#tags"
+    },
+    {
+      "include": "#comment"
+    },
     {
       "include": "source.aspx"
     },
     {
       "include": "text.html.basic"
-		},
-		{
-			"name": "entity.name.tag.aspx",
-			"match": "(this|if|else|do|while|for|foreach|continue|break|return)"
-		},
+    },
+    {
+      "name": "entity.name.tag.aspx",
+      "match": "(this|if|else|do|while|for|foreach|continue|break|return)"
+    },
     {
       "begin": "(<%[#@=]?)\\s*(([a-zA-Z]+)(\\.))?([a-zA-Z]+)(?=[^(%>)]*)",
-			"beginCaptures": {
-				"1": {
-					"name": "keyword.control.aspx"
-				},
-				"3": {
-					"name": "entity.name.class"
-				},
-				"5": {
-					"name": "entity.other.attribute-name"
-				}
-			},
-			"end": "(%>)",
-			"endCaptures": {
-				"1": {
-					"name": "keyword.control.aspx"
-				}
-			},
-			"name": "",
-			"patterns": [
-				{
-					"include": ""
-				}
-			]
-		},
-		{
-      "name":"keyword.control.aspx",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.aspx"
+        },
+        "3": {
+          "name": "entity.name.class"
+        },
+        "5": {
+          "name": "entity.other.attribute-name"
+        }
+      },
+      "end": "(%>)",
+      "endCaptures": {
+        "1": {
+          "name": "keyword.control.aspx"
+        }
+      },
+      "name": "",
+      "patterns": [
+        {
+          "include": ""
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.aspx",
       "match": "(<%[#@=]?)|(%>)"
     }
   ],
@@ -80,8 +81,9 @@
         {
           "name": "entity.name.tag.aspx",
           "match": "\\b(ASP|TextBox|Buttom|Register|Page)\\b"
-        },{
-          "name":"entity.other.attribute-name",
+        },
+        {
+          "name": "entity.other.attribute-name",
           "match": "\\b(Inherits|Src|TagName|TagPrefix|Language|AutoEventWireup|CodeFile)\\b"
         }
       ]
