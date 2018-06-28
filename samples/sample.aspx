@@ -181,10 +181,10 @@
                         <td width="8%">审核数量</td>
                         <%}%>
 
-                        <%if((Convert.ToInt32(this.CurID)==5||Convert.ToInt32(this.CurID)==6||Convert.ToInt32(this.CurID)==7||Convert.ToInt32(this.CurID)==8||Convert.ToInt32(this.CurID)==9||Convert.ToInt32(this.CurID)==99)&& this.PageEditType==2){%>
+                        if<%if((Convert.ToInt32(this.CurID)==5||Convert.ToInt32(this.CurID)==6||Convert.ToInt32(this.CurID)==7||Convert.ToInt32(this.CurID)==8||Convert.ToInt32(this.CurID)==9||Convert.ToInt32(this.CurID)==99)&& this.PageEditType==2){%>
                         <td width="8%">库存</td>
                         <%}%>
-
+                        <%=User.Name%>
                         <td width="11%">使用人</td>
                         <td width="28%">备注说明</td>
                         <%if(this.CurID=="99"&& this.PageEditType==2){ %>
@@ -214,7 +214,7 @@
                             { %>
                             <td><%# DataBinder.Eval(Container.DataItem,"SUPPLIESNAME")%>&nbsp;</td>
                             <%} %>
-
+                            @*abc.def*@
                             <td><%# DataBinder.Eval(Container.DataItem,"GuiGe")%>&nbsp;</td>
                             <td><%# DataBinder.Eval(Container.DataItem,"SNUMBER")%>&nbsp;</td>
                             <td><%# DataBinder.Eval(Container.DataItem,"ACUNITCODE")%>&nbsp;</td>
