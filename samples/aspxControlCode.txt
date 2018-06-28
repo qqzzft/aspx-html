@@ -1,0 +1,106 @@
+<asp:AdRotator runat="server" ID="AdRotator1" />
+<asp:BulletedList runat="server" ID="BulletedList1" ></asp:BulletedList>
+<asp:Button runat="server" ID="Button1" Text="Button" />
+<asp:Calendar runat="server" ID="Calendar1" ></asp:Calendar>
+<asp:CheckBox runat="server" ID="CheckBox1" />
+<asp:CheckBoxList runat="server" ID="CheckBoxList1" ></asp:CheckBoxList>
+<asp:DropDownList runat="server" ID="DropDownList1" ></asp:DropDownList>
+<asp:FileUpload runat="server" ID="FileUpload1" />
+<asp:HiddenField runat="server" ID="HiddenField1" />
+<asp:HyperLink runat="server" ID="HyperLink1" >HyperLink</asp:HyperLink>
+<asp:Image runat="server" ID="Image1" />
+<asp:ImageButton runat="server" ID="ImageButton1" />
+<asp:ImageMap runat="server" ID="ImageMap1" ></asp:ImageMap>
+<asp:Label runat="server" ID="Label1" Text="Label"></asp:Label>
+<asp:LinkButton runat="server" ID="LinkButton1" >LinkButton</asp:LinkButton>
+<asp:ListBox runat="server" ID="ListBox1" ></asp:ListBox>
+<asp:Literal runat="server" ID="Literal1" ></asp:Literal>
+<asp:Localize runat="server" ID="Localize1" ></asp:Localize>
+<asp:MultiView runat="server" ID="MultiView1" ></asp:MultiView>
+<asp:Panel runat="server" ID="Panel1" ></asp:Panel>
+<asp:PlaceHolder runat="server" ID="PlaceHolder1" ></asp:PlaceHolder>
+<asp:RadioButton runat="server" ID="RadioButton1" />
+<asp:RadioButtonList runat="server" ID="RadioButtonList1" ></asp:RadioButtonList>
+<asp:Substitution runat="server" ID="Substitution1" />
+<asp:Table runat="server" ID="Table1" ></asp:Table>
+<asp:TextBox runat="server" ID="TextBox1" ></asp:TextBox>
+<asp:View runat="server" ID="View1" ></asp:View>
+<asp:Xml runat="server" ID="Xml1" ></asp:Xml>
+<asp:DataList runat="server" ID="DataList1" ></asp:DataList>
+<asp:DataPager runat="server" ID="DataPager1" ></asp:DataPager>
+<asp:DetailsView runat="server" ID="DetailsView1" Height="50px" Width="125px"></asp:DetailsView>
+<asp:EntityDataSource runat="server" ID="EntityDataSource1" ></asp:EntityDataSource>
+<asp:FormView runat="server" ID="FormView1" ></asp:FormView>
+<asp:GridView runat="server" ID="GridView1" ></asp:GridView>
+<asp:LinqDataSource runat="server" ID="LinqDataSource1" ></asp:LinqDataSource>
+<asp:ListView runat="server" ID="ListView1" ></asp:ListView>
+<asp:ObjectDataSource runat="server" ID="ObjectDataSource1" ></asp:ObjectDataSource>
+<asp:QueryExtender runat="server" ID="QueryExtender1" ></asp:QueryExtender>
+<asp:Repeater runat="server" ID="Repeater1" ></asp:Repeater>
+<asp:SiteMapDataSource runat="server" ID="SiteMapDataSource1" />
+<asp:SqlDataSource runat="server" ID="SqlDataSource1" ></asp:SqlDataSource>
+<asp:XmlDataSource runat="server" ID="XmlDataSource1" ></asp:XmlDataSource>
+<asp:CompareValidator runat="server" ID="CompareValidator1" ErrorMessage="CompareValidator"></asp:CompareValidator>
+<asp:CustomValidator runat="server" ID="CustomValidator1" ErrorMessage="CustomValidator"></asp:CustomValidator>
+<asp:RangeValidator runat="server" ID="RangeValidator1" ErrorMessage="RangeValidator"></asp:RangeValidator>
+<asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator1" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator>
+<asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator1" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+<asp:ValidationSummary runat="server" ID="ValidationSummary1" />
+<asp:Menu runat="server" ID="Menu1" ></asp:Menu>
+<asp:SiteMapPath runat="server" ID="SiteMapPath1" ></asp:SiteMapPath>
+<asp:TreeView runat="server" ID="TreeView1" ></asp:TreeView>
+<asp:ChangePassword runat="server" ID="ChangePassword1" ></asp:ChangePassword>
+<asp:Login runat="server" ID="Login1" ></asp:Login>
+<asp:LoginName runat="server" ID="LoginName1" />
+<asp:LoginStatus runat="server" ID="LoginStatus1" />
+<asp:LoginView runat="server" ID="LoginView1" ></asp:LoginView>
+<asp:PasswordRecovery runat="server" ID="PasswordRecovery1" ></asp:PasswordRecovery>
+<asp:AppearanceEditorPart runat="server" ID="AppearanceEditorPart1" />
+<asp:BehaviorEditorPart runat="server" ID="BehaviorEditorPart1" />
+<asp:CatalogZone runat="server" ID="CatalogZone1" ></asp:CatalogZone>
+<asp:ConnectionsZone runat="server" ID="ConnectionsZone1" ></asp:ConnectionsZone>
+<asp:DeclarativeCatalogPart runat="server" ID="DeclarativeCatalogPart1" ></asp:DeclarativeCatalogPart>
+<asp:EditorZone runat="server" ID="EditorZone1" ></asp:EditorZone>
+<asp:ImportCatalogPart runat="server" ID="ImportCatalogPart1" />
+<asp:LayoutEditorPart runat="server" ID="LayoutEditorPart1" />
+<asp:PageCatalogPart runat="server" ID="PageCatalogPart1" />
+<asp:PropertyGridEditorPart runat="server" ID="PropertyGridEditorPart1" />
+<asp:ProxyWebPartManager runat="server" ID="ProxyWebPartManager1" ></asp:ProxyWebPartManager>
+<asp:WebPartManager runat="server" ID="WebPartManager1" ></asp:WebPartManager>
+<asp:WebPartZone runat="server" ID="WebPartZone1" ></asp:WebPartZone>
+<asp:ScriptManager runat="server" ID="ScriptManager1" ></asp:ScriptManager>
+<asp:ScriptManagerProxy runat="server" ID="ScriptManagerProxy1" ></asp:ScriptManagerProxy>
+<asp:Timer runat="server" ID="Timer1" ></asp:Timer>
+<asp:UpdatePanel runat="server" ID="UpdatePanel1" ></asp:UpdatePanel>
+<asp:UpdateProgress runat="server" ID="UpdateProgress1" ></asp:UpdateProgress>
+<asp:DynamicControl runat="server" ID="DynamicControl1" />
+<asp:DynamicDataManager runat="server" ID="DynamicDataManager1" ></asp:DynamicDataManager>
+<asp:DynamicEntity runat="server" ID="DynamicEntity1" ></asp:DynamicEntity>
+<asp:DynamicFilter runat="server" ID="DynamicFilter1" ></asp:DynamicFilter>
+<asp:DynamicHyperLink runat="server" ID="DynamicHyperLink1" ></asp:DynamicHyperLink>
+<asp:DynamicValidator runat="server" ID="DynamicValidator1" />
+
+
+
+<asp:Wizard runat="server" ID="Wizard1" >
+	<WizardSteps>
+		<asp:WizardStep runat="server" ID="WizardStep1" Title="Step 1"></asp:WizardStep>
+		<asp:WizardStep runat="server" ID="WizardStep2" Title="Step 2"></asp:WizardStep>
+	</WizardSteps>
+</asp:Wizard>
+		<asp:Chart runat="server" ID="Chart1" >
+	<Series>
+		<asp:Series Name="Series1"></asp:Series>
+	</Series>
+	<ChartAreas>
+		<asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+	</ChartAreas>
+</asp:Chart>
+<asp:CreateUserWizard runat="server" ID="CreateUserWizard1" >
+	<WizardSteps>
+		<asp:CreateUserWizardStep runat="server" ID="CreateUserWizardStep1" >
+		</asp:CreateUserWizardStep>
+		<asp:CompleteWizardStep runat="server" ID="CompleteWizardStep1" >
+		</asp:CompleteWizardStep>
+	</WizardSteps>
+</asp:CreateUserWizard>
