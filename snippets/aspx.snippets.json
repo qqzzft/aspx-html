@@ -1,23 +1,121 @@
 {
-    "aspAdRotator": {
-        "prefix": "aspAdRotator",
-        "body": [
-            "<asp:AdRotator ID=\"${1:AdRotator1}\" runat=\"server\" />"
-        ],
-        "description": ""
-    },
-    "aspBulletedList": {
-        "prefix": "aspBulletedList",
-        "body": [
-            "<asp:BulletedList ID=\"${1:BulletedList1}\" runat=\"server\"></asp:BulletedList>"
-        ],
-        "description": ""
-    },
-    "aspButton": {
-        "prefix": "aspButton",
-        "body": [
-            "<asp:Button ID=\"${1:Button1}\" runat=\"server\" Text=\"Button\" />"
-        ],
-        "description": ""
-    }
+  "aspAdRotator": { "prefix": "aspAdRotator", "body": [ "<asp:AdRotator runat=\"server\" ID=\"AdRotator1\" />" ], "description": "" },
+  "aspBulletedList": { "prefix": "aspBulletedList", "body": [ "<asp:BulletedList runat=\"server\" ID=\"BulletedList1\" ></asp:BulletedList>" ], "description": "" },
+  "aspButton": { "prefix": "aspButton", "body": [ "<asp:Button runat=\"server\" ID=\"Button1\" Text=\"Button\" />" ], "description": "" },
+  "aspCalendar": { "prefix": "aspCalendar", "body": [ "<asp:Calendar runat=\"server\" ID=\"Calendar1\" ></asp:Calendar>" ], "description": "" },
+  "aspCheckBox": { "prefix": "aspCheckBox", "body": [ "<asp:CheckBox runat=\"server\" ID=\"CheckBox1\" />" ], "description": "" },
+  "aspCheckBoxList": { "prefix": "aspCheckBoxList", "body": [ "<asp:CheckBoxList runat=\"server\" ID=\"CheckBoxList1\" ></asp:CheckBoxList>" ], "description": "" },
+  "aspDropDownList": { "prefix": "aspDropDownList", "body": [ "<asp:DropDownList runat=\"server\" ID=\"DropDownList1\" ></asp:DropDownList>" ], "description": "" },
+  "aspFileUpload": { "prefix": "aspFileUpload", "body": [ "<asp:FileUpload runat=\"server\" ID=\"FileUpload1\" />e" ], "description": "" },
+  "aspHiddenField": { "prefix": "aspHiddenField", "body": [ "<asp:HiddenField runat=\"server\" ID=\"HiddenField1\" />" ], "description": "" },
+  "aspHyperLink": { "prefix": "aspHyperLink", "body": [ "<asp:HyperLink runat=\"server\" ID=\"HyperLink1\" >HyperLink</asp:HyperLink>" ], "description": "" },
+  "aspImage": { "prefix": "aspImage", "body": [ "<asp:Image runat=\"server\" ID=\"Image1\" />" ], "description": "" },
+  "aspImageButton": { "prefix": "aspImageButton", "body": [ "<asp:ImageButton runat=\"server\" ID=\"ImageButton1\" />" ], "description": "" },
+  "aspImageMap": { "prefix": "aspImageMap", "body": [ "<asp:ImageMap runat=\"server\" ID=\"ImageMap1\" ></asp:ImageMap>" ], "description": "" },
+  "aspLabel": { "prefix": "aspLabel", "body": [ "<asp:Label runat=\"server\" ID=\"Label1\" Text=\"Label\"></asp:Label>" ], "description": "" },
+  "aspLinkButton": { "prefix": "aspLinkButton", "body": [ "<asp:LinkButton runat=\"server\" ID=\"LinkButton1\" >LinkButton</asp:LinkButton>" ], "description": "" },
+  "aspListBox": { "prefix": "aspListBox", "body": [ "<asp:ListBox runat=\"server\" ID=\"ListBox1\" ></asp:ListBox>" ], "description": "" },
+  "aspLiteral": { "prefix": "aspLiteral", "body": [ "<asp:Literal runat=\"server\" ID=\"Literal1\" ></asp:Literal>" ], "description": "" },
+  "aspLocalize": { "prefix": "aspLocalize", "body": [ "<asp:Localize runat=\"server\" ID=\"Localize1\" ></asp:Localize>" ], "description": "" },
+  "aspMultiView": { "prefix": "aspMultiView", "body": [ "<asp:MultiView runat=\"server\" ID=\"MultiView1\" ></asp:MultiView>" ], "description": "" },
+  "aspPanel": { "prefix": "aspPanel", "body": [ "<asp:Panel runat=\"server\" ID=\"Panel1\" ></asp:Panel>" ], "description": "" },
+  "aspPlaceHolder": { "prefix": "aspPlaceHolder", "body": [ "<asp:PlaceHolder runat=\"server\" ID=\"PlaceHolder1\" ></asp:PlaceHolder>" ], "description": "" },
+  "aspRadioButton": { "prefix": "aspRadioButton", "body": [ "<asp:RadioButton runat=\"server\" ID=\"RadioButton1\" />" ], "description": "" },
+  "aspRadioButtonList": { "prefix": "aspRadioButtonList", "body": [ "<asp:RadioButtonList runat=\"server\" ID=\"RadioButtonList1\" ></asp:RadioButtonList>" ], "description": "" },
+  "aspSubstitution": { "prefix": "aspSubstitution", "body": [ "<asp:Substitution runat=\"server\" ID=\"Substitution1\" />" ], "description": "" },
+  "aspTable": { "prefix": "aspTable", "body": [ "<asp:Table runat=\"server\" ID=\"Table1\" ></asp:Table>" ], "description": "" },
+  "aspTextBox": { "prefix": "aspTextBox", "body": [ "<asp:TextBox runat=\"server\" ID=\"TextBox1\" ></asp:TextBox>" ], "description": "" },
+  "aspView": { "prefix": "aspView", "body": [ "<asp:View runat=\"server\" ID=\"View1\" ></asp:View>" ], "description": "" },
+  "aspXml": { "prefix": "aspXml", "body": [ "<asp:Xml runat=\"server\" ID=\"Xml1\" ></asp:Xml>" ], "description": "" },
+  "aspDataList": { "prefix": "aspDataList", "body": [ "<asp:DataList runat=\"server\" ID=\"DataList1\" ></asp:DataList>" ], "description": "" },
+  "aspDataPager": { "prefix": "aspDataPager", "body": [ "<asp:DataPager runat=\"server\" ID=\"DataPager1\" ></asp:DataPager>" ], "description": "" },
+  "aspDetailsView": { "prefix": "aspDetailsView", "body": [ "<asp:DetailsView runat=\"server\" ID=\"DetailsView1\" Height=\"50px\" Width=\"125px\"></asp:DetailsView>" ], "description": "" },
+  "aspEntityDataSource": { "prefix": "aspEntityDataSource", "body": [ "<asp:EntityDataSource runat=\"server\" ID=\"EntityDataSource1\" ></asp:EntityDataSource>" ], "description": "" },
+  "aspFormView": { "prefix": "aspFormView", "body": [ "<asp:FormView runat=\"server\" ID=\"FormView1\" ></asp:FormView>" ], "description": "" },
+  "aspGridView": { "prefix": "aspGridView", "body": [ "<asp:GridView runat=\"server\" ID=\"GridView1\" ></asp:GridView>" ], "description": "" },
+  "aspLinqDataSource": { "prefix": "aspLinqDataSource", "body": [ "<asp:LinqDataSource runat=\"server\" ID=\"LinqDataSource1\" ></asp:LinqDataSource>" ], "description": "" },
+  "aspListView": { "prefix": "aspListView", "body": [ "<asp:ListView runat=\"server\" ID=\"ListView1\" ></asp:ListView>" ], "description": "" },
+  "aspObjectDataSource": { "prefix": "aspObjectDataSource", "body": [ "<asp:ObjectDataSource runat=\"server\" ID=\"ObjectDataSource1\" ></asp:ObjectDataSource>" ], "description": "" },
+  "aspQueryExtender": { "prefix": "aspQueryExtender", "body": [ "<asp:QueryExtender runat=\"server\" ID=\"QueryExtender1\" ></asp:QueryExtender>" ], "description": "" },
+  "aspRepeater": { "prefix": "aspRepeater", "body": [ "<asp:Repeater runat=\"server\" ID=\"Repeater1\" ></asp:Repeater>" ], "description": "" },
+  "aspSiteMapDataSource": { "prefix": "aspSiteMapDataSource", "body": [ "<asp:SiteMapDataSource runat=\"server\" ID=\"SiteMapDataSource1\" />" ], "description": "" },
+  "aspSqlDataSource": { "prefix": "aspSqlDataSource", "body": [ "<asp:SqlDataSource runat=\"server\" ID=\"SqlDataSource1\" ></asp:SqlDataSource>" ], "description": "" },
+  "aspXmlDataSource": { "prefix": "aspXmlDataSource", "body": [ "<asp:XmlDataSource runat=\"server\" ID=\"XmlDataSource1\" ></asp:XmlDataSource>" ], "description": "" },
+  "aspCompareValidator": { "prefix": "aspCompareValidator", "body": [ "<asp:CompareValidator runat=\"server\" ID=\"CompareValidator1\" ErrorMessage=\"CompareValidator\"></asp:CompareValidator>" ], "description": "" },
+  "aspCustomValidator": { "prefix": "aspCustomValidator", "body": [ "<asp:CustomValidator runat=\"server\" ID=\"CustomValidator1\" ErrorMessage=\"CustomValidator\"></asp:CustomValidator>" ], "description": "" },
+  "aspRangeValidator": { "prefix": "aspRangeValidator", "body": [ "<asp:RangeValidator runat=\"server\" ID=\"RangeValidator1\" ErrorMessage=\"RangeValidator\"></asp:RangeValidator>" ], "description": "" },
+  "aspRegularExpressionValidator": { "prefix": "aspRegularExpressionValidator", "body": [ "<asp:RegularExpressionValidator runat=\"server\" ID=\"RegularExpressionValidator1\" ErrorMessage=\"RegularExpressionValidator\"></asp:RegularExpressionValidator>" ], "description": "" },
+  "aspRequiredFieldValidator": { "prefix": "aspRequiredFieldValidator", "body": [ "<asp:RequiredFieldValidator runat=\"server\" ID=\"RequiredFieldValidator1\" ErrorMessage=\"RequiredFieldValidator\"></asp:RequiredFieldValidator>" ], "description": "" },
+  "aspValidationSummary": { "prefix": "aspValidationSummary", "body": [ "<asp:ValidationSummary runat=\"server\" ID=\"ValidationSummary1\" />" ], "description": "" },
+  "aspMenu": { "prefix": "aspMenu", "body": [ "<asp:Menu runat=\"server\" ID=\"Menu1\" ></asp:Menu>" ], "description": "" },
+  "aspSiteMapPath": { "prefix": "aspSiteMapPath", "body": [ "<asp:SiteMapPath runat=\"server\" ID=\"SiteMapPath1\" ></asp:SiteMapPath>" ], "description": "" },
+  "aspTreeView": { "prefix": "aspTreeView", "body": [ "<asp:TreeView runat=\"server\" ID=\"TreeView1\" ></asp:TreeView>" ], "description": "" },
+  "aspChangePassword": { "prefix": "aspChangePassword", "body": [ "<asp:ChangePassword runat=\"server\" ID=\"ChangePassword1\" ></asp:ChangePassword>" ], "description": "" },
+  "aspLogin": { "prefix": "aspLogin", "body": [ "<asp:Login runat=\"server\" ID=\"Login1\" ></asp:Login>" ], "description": "" },
+  "aspLoginName": { "prefix": "aspLoginName", "body": [ "<asp:LoginName runat=\"server\" ID=\"LoginName1\" />" ], "description": "" },
+  "aspLoginStatus": { "prefix": "aspLoginStatus", "body": [ "<asp:LoginStatus runat=\"server\" ID=\"LoginStatus1\" />" ], "description": "" },
+  "aspLoginView": { "prefix": "aspLoginView", "body": [ "<asp:LoginView runat=\"server\" ID=\"LoginView1\" ></asp:LoginView>" ], "description": "" },
+  "aspPasswordRecovery": { "prefix": "aspPasswordRecovery", "body": [ "<asp:PasswordRecovery runat=\"server\" ID=\"PasswordRecovery1\" ></asp:PasswordRecovery>" ], "description": "" },
+  "aspAppearanceEditorPart": { "prefix": "aspAppearanceEditorPart", "body": [ "<asp:AppearanceEditorPart runat=\"server\" ID=\"AppearanceEditorPart1\" />" ], "description": "" },
+  "aspBehaviorEditorPart": { "prefix": "aspBehaviorEditorPart", "body": [ "<asp:BehaviorEditorPart runat=\"server\" ID=\"BehaviorEditorPart1\" />" ], "description": "" },
+  "aspCatalogZone": { "prefix": "aspCatalogZone", "body": [ "<asp:CatalogZone runat=\"server\" ID=\"CatalogZone1\" ></asp:CatalogZone>" ], "description": "" },
+  "aspConnectionsZone": { "prefix": "aspConnectionsZone", "body": [ "<asp:ConnectionsZone runat=\"server\" ID=\"ConnectionsZone1\" ></asp:ConnectionsZone>" ], "description": "" },
+  "aspDeclarativeCatalogPart": { "prefix": "aspDeclarativeCatalogPart", "body": [ "<asp:DeclarativeCatalogPart runat=\"server\" ID=\"DeclarativeCatalogPart1\" ></asp:DeclarativeCatalogPart>" ], "description": "" },
+  "aspEditorZone": { "prefix": "aspEditorZone", "body": [ "<asp:EditorZone runat=\"server\" ID=\"EditorZone1\" ></asp:EditorZone>" ], "description": "" },
+  "aspImportCatalogPart": { "prefix": "aspImportCatalogPart", "body": [ "<asp:ImportCatalogPart runat=\"server\" ID=\"ImportCatalogPart1\" />" ], "description": "" },
+  "aspLayoutEditorPart": { "prefix": "aspLayoutEditorPart", "body": [ "<asp:LayoutEditorPart runat=\"server\" ID=\"LayoutEditorPart1\" />" ], "description": "" },
+  "aspPageCatalogPart": { "prefix": "aspPageCatalogPart", "body": [ "<asp:PageCatalogPart runat=\"server\" ID=\"PageCatalogPart1\" />" ], "description": "" },
+  "aspPropertyGridEditorPart": { "prefix": "aspPropertyGridEditorPart", "body": [ "<asp:PropertyGridEditorPart runat=\"server\" ID=\"PropertyGridEditorPart1\" />" ], "description": "" },
+  "aspProxyWebPartManager": { "prefix": "aspProxyWebPartManager", "body": [ "<asp:ProxyWebPartManager runat=\"server\" ID=\"ProxyWebPartManager1\" ></asp:ProxyWebPartManager>" ], "description": "" },
+  "aspWebPartManager": { "prefix": "aspWebPartManager", "body": [ "<asp:WebPartManager runat=\"server\" ID=\"WebPartManager1\" ></asp:WebPartManager>" ], "description": "" },
+  "aspWebPartZone": { "prefix": "aspWebPartZone", "body": [ "<asp:WebPartZone runat=\"server\" ID=\"WebPartZone1\" ></asp:WebPartZone>" ], "description": "" },
+  "aspScriptManager": { "prefix": "aspScriptManager", "body": [ "<asp:ScriptManager runat=\"server\" ID=\"ScriptManager1\" ></asp:ScriptManager>" ], "description": "" },
+  "aspScriptManagerProxy": { "prefix": "aspScriptManagerProxy", "body": [ "<asp:ScriptManagerProxy runat=\"server\" ID=\"ScriptManagerProxy1\" ></asp:ScriptManagerProxy>" ], "description": "" },
+  "aspTimer": { "prefix": "aspTimer", "body": [ "<asp:Timer runat=\"server\" ID=\"Timer1\" ></asp:Timer>" ], "description": "" },
+  "aspUpdatePanel": { "prefix": "aspUpdatePanel", "body": [ "<asp:UpdatePanel runat=\"server\" ID=\"UpdatePanel1\" ></asp:UpdatePanel>" ], "description": "" },
+  "aspUpdateProgress": { "prefix": "aspUpdateProgress", "body": [ "<asp:UpdateProgress runat=\"server\" ID=\"UpdateProgress1\" ></asp:UpdateProgress>" ], "description": "" },
+  "aspDynamicControl": { "prefix": "aspDynamicControl", "body": [ "<asp:DynamicControl runat=\"server\" ID=\"DynamicControl1\" />" ], "description": "" },
+  "aspDynamicDataManager": { "prefix": "aspDynamicDataManager", "body": [ "<asp:DynamicDataManager runat=\"server\" ID=\"DynamicDataManager1\" ></asp:DynamicDataManager>" ], "description": "" },
+  "aspDynamicEntity": { "prefix": "aspDynamicEntity", "body": [ "<asp:DynamicEntity runat=\"server\" ID=\"DynamicEntity1\" ></asp:DynamicEntity>" ], "description": "" },
+  "aspDynamicFilter": { "prefix": "aspDynamicFilter", "body": [ "<asp:DynamicFilter runat=\"server\" ID=\"DynamicFilter1\" ></asp:DynamicFilter>" ], "description": "" },
+  "aspDynamicHyperLink": { "prefix": "aspDynamicHyperLink", "body": [ "<asp:DynamicHyperLink runat=\"server\" ID=\"DynamicHyperLink1\" ></asp:DynamicHyperLink>" ], "description": "" },
+  "aspDynamicValidator": { "prefix": "aspDynamicValidator", "body": [ "<asp:DynamicValidator runat=\"server\" ID=\"DynamicValidator1\" />" ], "description": "" },
+
+  "aspChart":{
+    "prefix":"aspChart","description":"",
+    "body":[
+      "<asp:Chart runat=\"server\" ID=\"Chart1\" >",
+      "  <Series>",
+      "    <asp:Series Name=\"Series1\"></asp:Series>",
+      "  </Series>",
+      "  <ChartAreas>",
+      "    <asp:ChartArea Name=\"ChartArea1\"></asp:ChartArea>",
+      "  </ChartAreas>",
+      "</asp:Chart>"
+    ]
+  },
+  "aspWizard":{
+    "prefix":"aspWizard","description":"",
+    "body":[
+      "<asp:Wizard runat=\"server\" ID=\"Wizard1\" >",
+      "  <WizardSteps>",
+      "    <asp:WizardStep runat=\"server\" ID=\"WizardStep1\" Title=\"Step 1\"></asp:WizardStep>",
+      "    <asp:WizardStep runat=\"server\" ID=\"WizardStep2\" Title=\"Step 2\"></asp:WizardStep>",
+      "  </WizardSteps>",
+      "</asp:Wizard>"
+    ]
+  },
+  "aspCreateUserWizard":{
+    "prefix":"aspCreateUserWizard","description":"",
+    "body":[
+      "<asp:CreateUserWizard runat=\"server\" ID=\"CreateUserWizard1\" >",
+      "  <WizardSteps>",
+      "    <asp:CreateUserWizardStep runat=\"server\" ID=\"CreateUserWizardStep1\" >",
+      "    </asp:CreateUserWizardStep>",
+      "    <asp:CompleteWizardStep runat=\"server\" ID=\"CompleteWizardStep1\" >",
+      "    </asp:CompleteWizardStep>",
+      "  </WizardSteps>",
+      "</asp:CreateUserWizard>"
+    ]
+  }
 }
