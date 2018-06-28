@@ -1,55 +1,90 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "ASPX-HTML",
-	"patterns": [
-		{
-			"include": "#keywords"
+  "scopeName": "source.html.aspx",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    { "include": "#tags" },
+    { "include": "#comment" },
+    {
+      "include": "source.aspx"
+    },
+    {
+      "include": "text.html.basic"
 		},
 		{
-			"include": "#strings"
+			"name": "entity.name.tag.aspx",
+			"match": "(this|if|else|do|while|for|foreach|continue|break|return)"
 		},
-		{ "include": "#tags" },
-		{
-			"include": "source.aspx"
-		},
-		{
-			"include": "text.html.basic"
-		},{
-			"name":"keyword.control.aspx",
-			"match": "(<%[#@]?)|(%>)|(&&)|(eval|Eval)"
-		}
-	],
-	"repository": {
-		"keywords": {
+    {
+      "begin": "(<%[#@=]?)\\s*(([a-zA-Z]+)(\\.))?([a-zA-Z]+)(?=[^(%>)]*)",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.control.aspx"
+				},
+				"3": {
+					"name": "entity.name.class"
+				},
+				"5": {
+					"name": "entity.other.attribute-name"
+				}
+			},
+			"end": "(%>)",
+			"endCaptures": {
+				"1": {
+					"name": "keyword.control.aspx"
+				}
+			},
+			"name": "",
 			"patterns": [
 				{
-					"name": "keyword.control.aspx",
-					"match": "\\b(if|while|for|return)\\b"
+					"include": ""
 				}
 			]
 		},
-		"strings": {
-			"name": "string.quoted.double.aspx",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.aspx",
-					"match": "\\\\."
-				}
-			]
-		},
-		"tags": {
-			"patterns": [
-				{
-					"name": "entity.name.tag.aspx",
-					"match": "\\b(ASP|TextBox|Buttom|Register|Page)\\b"
-				},{
-					"name":"entity.other.attribute-name",
-					"match": "\\b(Inherits|Src|TagName|TagPrefix|Language|AutoEventWireup|CodeFile)\\b"
-				}
-			]
-		}
-	},
-	"scopeName": "source.html.aspx"
+		{
+      "name":"keyword.control.aspx",
+      "match": "(<%[#@=]?)|(%>)"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "name": "string.quoted.double.aspx",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.aspx",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comment": {
+      "begin": "<%\\-\\-",
+      "end": "\\-\\-%>",
+      "name": "comment",
+      "patterns": [
+        {
+          "name": "comment",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "tags": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.aspx",
+          "match": "\\b(ASP|TextBox|Buttom|Register|Page)\\b"
+        },{
+          "name":"entity.other.attribute-name",
+          "match": "\\b(Inherits|Src|TagName|TagPrefix|Language|AutoEventWireup|CodeFile)\\b"
+        }
+      ]
+    }
+  }
 }
