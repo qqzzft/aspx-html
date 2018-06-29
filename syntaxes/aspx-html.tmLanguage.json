@@ -3,88 +3,62 @@
   "name": "ASPX-HTML",
   "scopeName": "source.html.aspx",
   "patterns": [
-    {
-      "include": "#strings"
-    },
-    {
-      "include": "#tags"
-    },
-    {
-      "include": "#comment"
-    },
-    {
-      "include": "source.aspx"
-    },
-    {
-      "include": "text.html.basic"
-    },
+    { "include": "#strings" },
+    { "include": "#tags" },
+    { "include": "#comment" },
+    { "include": "source.aspx" },
+    { "include": "text.html.basic" },
     {
       "name": "entity.name.tag.aspx",
       "match": "(this|if|else|do|while|for|foreach|continue|break|return)"
     },
     {
-      "begin": "(<%[#@=]?)\\s*(([a-zA-Z]+)(\\.))?([a-zA-Z]+)(?=[^(%>)]*)",
+      "begin": "(<%[#@=]?)\\s*(([a-zA-Z]+)(\\.))?([a-zA-Z]*)",
       "beginCaptures": {
-        "1": {
-          "name": "keyword.control.aspx"
-        },
-        "3": {
-          "name": "entity.name.class"
-        },
-        "5": {
-          "name": "entity.other.attribute-name"
-        }
+        "1": { "name": "keyword.control.aspx"},
+        "3": { "name": "entity.name.class" },
+        "5": { "name": "entity.other.attribute-name" }
       },
       "end": "(%>)",
       "endCaptures": {
-        "1": {
-          "name": "keyword.control.aspx"
-        }
+        "1": { "name": "keyword.control.aspx" }
       },
-      "name": "",
-      "patterns": [
-        {
-          "include": ""
-        }
-      ]
-    },
-    {
-      "name": "keyword.control.aspx",
-      "match": "(<%[#@=]?)|(%>)"
+			"name": "meta.tag.any.html",
+			"patterns": [
+        { "include": "#strings" }
+			]
     }
   ],
   "repository": {
     "strings": {
       "name": "string.quoted.double.aspx",
-      "begin": "\"",
-      "end": "\"",
+      "begin": "'|\"",
+      "end": "'|\"",
       "patterns": [
         {
-          "name": "constant.character.escape.aspx",
-          "match": "\\\\."
+          "name": "string.value.aspx",
+          "match": "."
         }
       ]
     },
     "comment": {
-      "begin": "<%\\-\\-",
-      "end": "\\-\\-%>",
+      "begin": "<%--",
+      "end": "--%>",
       "name": "comment",
       "patterns": [
         {
           "name": "comment",
-          "match": "\\\\."
+          "match": "."
         }
       ]
     },
-    "tags": {
+    "tags":{
       "patterns": [
         {
-          "name": "entity.name.tag.aspx",
-          "match": "\\b(ASP|TextBox|Buttom|Register|Page)\\b"
-        },
-        {
-          "name": "entity.other.attribute-name",
-          "match": "\\b(Inherits|Src|TagName|TagPrefix|Language|AutoEventWireup|CodeFile)\\b"
+          "match": "\\s([a-zA-Z]*)=",
+          "captures": {
+            "1":{ "name":"comment" }
+          }
         }
       ]
     }

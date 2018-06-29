@@ -1,4 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="frmFormSuppliesInfoLY.aspx.cs"
+﻿"字符串 commet"sdf 'ddd'
+"dd'dd'dd"dd
+'dd"dd"dd'dd true
+"dd'dd"dd'dd"dd'dd"dd
+'dd"dd'dd"dd'dd"dd'dd
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="frmFormSuppliesInfoLY.aspx.cs"
   Inherits="DirFolder_frmFormSuppliesInfoLY" %>
 
 <%@ Register Src="../UserContorl/UserContorl1.ascx" TagName="UC1" TagPrefix="uc1" %>
@@ -214,7 +220,7 @@
                             { %>
                             <td><%# DataBinder.Eval(Container.DataItem,"SUPPLIESNAME")%>&nbsp;</td>
                             <%} %>
-                            @*abc.def*@
+                            <%abc.def%>
                             <td><%# DataBinder.Eval(Container.DataItem,"GuiGe")%>&nbsp;</td>
                             <td><%# DataBinder.Eval(Container.DataItem,"SNUMBER")%>&nbsp;</td>
                             <td><%# DataBinder.Eval(Container.DataItem,"ACUNITCODE")%>&nbsp;</td>
