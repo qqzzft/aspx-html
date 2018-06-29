@@ -1,10 +1,4 @@
-﻿"字符串 commet"sdf 'ddd'
-"dd'dd'dd"dd
-'dd"dd"dd'dd true
-"dd'dd"dd'dd"dd'dd"dd
-'dd"dd'dd"dd'dd"dd'dd
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="frmFormSuppliesInfoLY.aspx.cs"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="frmFormSuppliesInfoLY.aspx.cs"
   Inherits="DirFolder_frmFormSuppliesInfoLY" %>
 
 <%@ Register Src="../UserContorl/UserContorl1.ascx" TagName="UC1" TagPrefix="uc1" %>
@@ -37,6 +31,12 @@
     font-family: "宋体"
   }
   </style>
+  <script>
+    function test(id) {
+      var p = document.getEnvironmentbyId('id');
+      if (p != null) p.innerxml = 'text';
+    }
+  </script>
   <form id="form1" runat="server">
     <div>
       <table width="1100" border="0" align="center">
