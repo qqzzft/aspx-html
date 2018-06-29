@@ -1,55 +1,55 @@
 {
-    "name": "aspx-html",
-    "displayName": "aspx-html",
-    "description": "在 ASPX 文件中提供语法高亮、括号匹配和代码片段功能。",
-    "version": "0.0.8",
-    "publisher": "QQZZFT",
-    "engines": {
-        "vscode": "^1.24.0"
-    },
-    "icon": "images/aspx-html.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/qqzzft/aspx-html"
-    },
-    "bugs": "https://github.com/qqzzft/aspx-html/issues",
-    "categories": [
-        "Programming Languages",
-        "Snippets"
+  "name": "aspx-html",
+  "displayName": "aspx-html",
+  "description": "在 ASPX 文件中提供语法高亮、括号匹配和代码片段功能。",
+  "version": "0.0.8",
+  "publisher": "QQZZFT",
+  "engines": {
+    "vscode": "^1.24.0"
+  },
+  "icon": "images/aspx-html.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qqzzft/aspx-html"
+  },
+  "bugs": "https://github.com/qqzzft/aspx-html/issues",
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "aspx",
+        "aliases": [
+          "ASPX",
+          "aspx"
+        ],
+        "extensions": [
+          ".aspx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "aspx",
-                "aliases": [
-                    "ASPX",
-                    "aspx"
-                ],
-                "extensions": [
-                    ".aspx"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "aspx",
-                "scopeName": "source.html.aspx",
-                "path": "./syntaxes/aspx-html.tmLanguage.json"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "aspx",
-                "path": "./snippets/aspx.snippets.json"
-            }
-        ],
-        "themes": [
-            {
-                "label": "Monokai-test",
-                "uiTheme": "vs-dark",
-                "path": "./syntaxes/asp.html.tmTheme"
-            }
-        ]
-    }
+    "grammars": [
+      {
+        "language": "aspx",
+        "scopeName": "source.html.aspx",
+        "path": "./syntaxes/aspx-html.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "aspx",
+        "path": "./snippets/aspx.snippets.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Monokai-test",
+        "uiTheme": "vs-dark",
+        "path": "./syntaxes/asp.html.tmTheme"
+      }
+    ]
+  }
 }
