@@ -9,3 +9,4 @@
 - 支持html标签高亮
 - emmet支持，需在用户设置里自行添加代码：`"emmet.includeLanguages": {"aspx": "html"},`
 - 提供 webform 和 ajaxtoolkit 代码片段
+- 支持高亮文件：`.aspx`，`.master`，`.ascx`
