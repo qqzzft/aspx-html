@@ -21,7 +21,11 @@
   "aspPanel": { "prefix": "aspPanel", "body": [ "<asp:Panel runat=\"server\" ID=\"${1:Panel}\" ></asp:Panel>" ], "description": "" },
   "aspPlaceHolder": { "prefix": "aspPlaceHolder", "body": [ "<asp:PlaceHolder runat=\"server\" ID=\"${1:PlaceHolder}\" ></asp:PlaceHolder>" ], "description": "" },
   "aspRadioButton": { "prefix": "aspRadioButton", "body": [ "<asp:RadioButton runat=\"server\" ID=\"${1:RadioButton}\" />" ], "description": "" },
-  "aspRadioButtonList": { "prefix": "aspRadioButtonList", "body": [ "<asp:RadioButtonList runat=\"server\" ID=\"${1:RadioButtonList}\" ></asp:RadioButtonList>" ], "description": "" },
+  "aspRadioButtonList": { "prefix": "aspRadioButtonList", "body": [
+    "<asp:RadioButtonList runat=\"server\" ID=\"${1:RadioButtonList}\" >",
+    "  <asp:ListItem>${2}</asp:ListItem>",
+    "  <asp:ListItem>${3}</asp:ListItem>",
+    "</asp:RadioButtonList>" ], "description": "" },
   "aspSubstitution": { "prefix": "aspSubstitution", "body": [ "<asp:Substitution runat=\"server\" ID=\"${1:Substitution}\" />" ], "description": "" },
   "aspTable": { "prefix": "aspTable", "body": [ "<asp:Table runat=\"server\" ID=\"${1:Table}\" ></asp:Table>" ], "description": "" },
   "aspTextBox": { "prefix": "aspTextBox", "body": [ "<asp:TextBox runat=\"server\" ID=\"${1:TextBox}\" ></asp:TextBox>" ], "description": "" },
